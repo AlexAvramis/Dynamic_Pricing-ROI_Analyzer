@@ -1,0 +1,25 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+
+# Testing
+.pytest_cache/
+
+# Notebook and OS noise
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Data and artifacts
+artifacts/*.joblib
+artifacts/*.json
+artifacts/*.csv
+artifacts/*.png
+data/raw/*.csv
+data/raw/*.csv.gz
+data/processed/*.csv

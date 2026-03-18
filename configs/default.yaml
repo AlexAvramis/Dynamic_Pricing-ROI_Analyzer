@@ -1,0 +1,26 @@
+project:
+  name: dynamic-pricing-roi-analyzer
+
+paths:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  artifacts_dir: artifacts
+
+data_sources:
+  listings_url: "https://data.insideairbnb.com/denmark/hovedstaden/copenhagen/2025-09-29/data/listings.csv.gz"
+  calendar_url: "https://data.insideairbnb.com/denmark/hovedstaden/copenhagen/2025-09-29/data/calendar.csv.gz"
+
+model:
+  test_size: 0.2
+  random_state: 42
+  max_rows: 200000
+  clip_target_upper_quantile: 0.995
+
+roi:
+  investment: 350000
+  fixed_costs_annual: 14000
+  variable_cost_rate: 0.22
+  elasticity: 1.4
+
+shap:
+  sample_size: 2000
