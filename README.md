@@ -9,7 +9,7 @@ An end-to-end data science project that:
 ## Project Structure
 
 ```text
-DynamicPricing&ROIAnalyzer/
+DynamicPricing_ROIAnalyzer/
   configs/default.yaml
   data/
     raw/
@@ -59,7 +59,13 @@ Place files directly into `data/raw/`:
 
 ```bash
 python -m venv .venv
+
+# CMD
 .venv\Scripts\activate
+
+# PowerShell
+.venv\Scripts\Activate.ps1
+
 pip install -r requirements.txt
 ```
 
@@ -135,8 +141,6 @@ Dashboard capabilities:
   - latitude/longitude
 - Log-transformed target (`TransformedTargetRegressor` with `log1p`/`expm1`) for better regression on skewed prices.
 - Upper-tail outlier clipping (configurable quantile, default 99.5th percentile).
-
-## Next Portfolio Enhancements
 
 ## Run Tests
 
