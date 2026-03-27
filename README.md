@@ -1,4 +1,4 @@
-# Dynamic Pricing & ROI Analyzer for Short-Term Rentals
+# Dynamic Pricing & ROI Analyzer for Short-Term Rentals using XGBoost
 
 An end-to-end data science project that:
 - ingests public short-term rental data (Inside Airbnb),
